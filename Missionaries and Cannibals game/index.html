@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Missionaries and Cannibals</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1>🛶 Missionaries & Cannibals Game</h1>
+
+  <div class="river">
+    <div class="bank" id="left-bank">
+      <div id="left-missionaries"></div>
+      <div id="left-cannibals"></div>
+    </div>
+    
+    <div class="boat-container">
+      <div id="boat">⛵</div>
+    </div>
+
+    <div class="bank" id="right-bank">
+      <div id="right-missionaries"></div>
+      <div id="right-cannibals"></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <label>👨‍🦱 Missionaries: 
+      <input type="number" id="missionaries" min="0" max="2" />
+    </label>
+    <label>👹 Cannibals: 
+      <input type="number" id="cannibals" min="0" max="2" />
+    </label>
+    <button onclick="move()">Move</button>
+  </div>
+
+  <p id="message"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
